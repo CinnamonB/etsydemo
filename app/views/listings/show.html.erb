@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+	<div class="large-6 columns">
+		<%= image_tag @listing.image.url %>
+	</div><!-- .columns -->
+	<div class="large-6 columns">
+		<h3><%= @listing.name %></h3>
+		<p><%= number_to_currency(@listing.price) %></p>
+		<p><%= @listing.description %></p>
+	</div><!-- .columns -->
+</div><!-- .row -->
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>

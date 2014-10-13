@@ -1,0 +1,46 @@
+body {
+	background-color: #f5f5f1;
+	font-family: Arial, Helvetica, Sans-serif;
+	color: #333;
+}
+
+.contain-to-grid {
+	// margin-bottom: 30px;
+}
+
+.contain-to-grid,
+.top-bar,
+.top-bar.expanded,
+.top-bar .left li:not(.has-form) a:not(.button) {
+	background-color: #efefeb;
+	color: #333;
+}
+
+.top-bar .name h1 a {
+	font-family: Guardian-Egyptt, Georiga, Serif;
+	font-weight: 400;
+	font-size: 2em;
+	color: #d5641c;
+}
+
+.top-bar .left li:not(.has-form) a:not(.button) {
+	font-weight: bold;
+	font-size: 1em;
+	color: #0192b5;
+}
+
+.item-listing .panel a {
+	padding-right: 10px;
+}
+
+.item-listing.medium-3.large-3.columns:nth-child(4n+1) {
+	clear: left;
+}
+
+.item-listing.medium-3.large-3.columns:last-child {
+	float: left;
+}
+
+.center {
+	text-align: center;
+}
