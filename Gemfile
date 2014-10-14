@@ -11,7 +11,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'foundation-rails'
 gem "paperclip", "~> 4.2"
 gem "paperclip-dropbox", ">= 1.1.7"
+gem "font-awesome-rails"
 gem "figaro"
+gem "devise"
 
 group :production do
 	gem 'pg'

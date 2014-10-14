@@ -4,45 +4,60 @@ body {
 	color: #333;
 }
 
-.contain-to-grid {
-	margin-bottom: 30px;
+.center {
+	text-align: center;
 }
 
-.contain-to-grid,
-.top-bar,
-.top-bar.expanded,
-.top-bar .left li:not(.has-form) a:not(.button) {
+.contain-to-grid {
+	margin-bottom: 30px;
 	background-color: #efefeb;
 	color: #333;
 }
 
-.top-bar .name h1 a {
-	font-family: Guardian-Egyptt, Georiga, Serif;
-	font-weight: 400;
-	font-size: 2em;
-	color: #d5641c;
-}
+.top-bar {
+	background-color: #efefeb;
 
-.top-bar .left li:not(.has-form) a:not(.button) {
-	font-weight: bold;
-	font-size: 1em;
-	color: #0192b5;
+	.top-bar.expanded .title-area {
+		background-color: #efefeb;
+		color: #333;
+	}
+	.name h1 a {
+		font-family: Guardian-Egyptt, Georiga, Serif;
+		font-weight: 400;
+		font-size: 2em;
+		color: #d5641c;
+	}
+	.left li:not(.has-form) a:not(.button),
+	.right li:not(.has-form) a:not(.button),
+	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+		background-color: #efefeb;
+		font-weight: bold;
+		font-size: 1em;
+		color: #0192b5;
+	}
+	.left li:not(.has-form) a:not(.button):hover,
+	.right li:not(.has-form) a:not(.button):hover,
+	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover {
+		background-color: #efefeb;
+		font-weight: bold;
+		font-size: 1em;
+		color: #d5641c;
+	}
+	.top-bar-section .has-dropdown > a:after {
+	    border-color: #0192b5 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+	}
 }
 
 .item-listing .panel a {
-	padding-right: 10px;
+		padding-right: 10px;
 }
 
-.item-listing.medium-3.large-3.columns:nth-child(4n+1) {
+.item-listing.medium-4.large-4.columns:nth-child(3n+1) {
 	clear: left;
 }
 
-.item-listing.medium-3.large-3.columns:last-child {
+.item-listing.medium-4.large-4.columns:last-child {
 	float: left;
-}
-
-.center {
-	text-align: center;
 }
 
 .caption {
@@ -55,3 +70,4 @@ body {
 		margin: 0;
 	}
 }
+
