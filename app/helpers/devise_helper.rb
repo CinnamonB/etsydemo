@@ -8,7 +8,7 @@ module DeviseHelper
 		html = <<-HTML
 		<div data-alert class="alert-box alert">
 			<a href="#" class="close">&times;</a>
-			<h4>#{sentence}</h4>
+			<h5>#{sentence}</h5>
 			#{messages}
 		</div>
 		HTML

@@ -1,7 +1,18 @@
+/* Colors Scheme */
+$fiercered: #e82a2a;
+$deepred: #751717;
+$beige: #f5f5f1;
+$tintgrey: #efefeb;
+$mediumgrey: #333;
+$coolorange: #d5641c;
+$bluetint: #0192b5;
+
+/* End of Colors */
+
 body {
-	background-color: #f5f5f1;
+	background-color: $beige;
 	font-family: Arial, Helvetica, Sans-serif;
-	color: #333;
+	color: $mediumgrey;
 }
 
 .center {
@@ -12,43 +23,52 @@ body {
 	padding: 0 1em;
 }
 
+.alert-box.alert {
+		background-color: $fiercered;
+		border-color: $fiercered;
+}
+
+.alert-box.alert h5 {
+	color: $deepred;
+}
+
 .contain-to-grid {
 	margin-bottom: 30px;
-	background-color: #efefeb;
-	color: #333;
+	background-color: $tintgrey;
+	color: $mediumgrey;
 }
 
 .top-bar {
-	background-color: #efefeb;
+	background-color: $tintgrey;
 
 	.top-bar.expanded .title-area {
-		background-color: #efefeb;
-		color: #333;
+		background-color: $tintgrey;
+		color: $mediumgrey;
 	}
 	.name h1 a {
 		font-family: Guardian-Egyptt, Georiga, Serif;
 		font-weight: 400;
 		font-size: 2em;
-		color: #d5641c;
+		color: $coolorange;
 	}
 	.left li:not(.has-form) a:not(.button),
 	.right li:not(.has-form) a:not(.button),
 	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
-		background-color: #efefeb;
+		background-color: $tintgrey;
 		font-weight: bold;
 		font-size: 1em;
-		color: #0192b5;
+		color: $bluetint;
 	}
 	.left li:not(.has-form) a:not(.button):hover,
 	.right li:not(.has-form) a:not(.button):hover,
 	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover {
-		background-color: #efefeb;
+		background-color: $tintgrey;
 		font-weight: bold;
 		font-size: 1em;
-		color: #d5641c;
+		color: $coolorange;
 	}
 	.top-bar-section .has-dropdown > a:after {
-	    border-color: #0192b5 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+	    border-color: $bluetint rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
 	}
 }
 
