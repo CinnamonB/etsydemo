@@ -23,6 +23,17 @@ body {
 	padding: 0 1em;
 }
 
+#homepage-hero {
+	background-image: url('pottery.jpg');
+	margin-bottom: 30px;
+	height: 400px;
+	padding: 100px 20px;
+	h1, h2 {
+		color: $mediumgrey;
+		font-family: Guardian-Egyptt, Georiga, Sans-serif;
+	}
+}
+
 .alert-box.alert {
 		background-color: $fiercered;
 		border-color: $fiercered;
