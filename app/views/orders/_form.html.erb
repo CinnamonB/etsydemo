@@ -4,7 +4,7 @@
       <%= image_tag @listing.image.url %>
     </div><!-- .thumbnail -->
     <h3><%= @listing.name %></h3>
-    <h4><%= number_to_currency(@listing.price) %></h4>
+    <h5><%= number_to_currency(@listing.price) %></h5>
   </div><!-- .columns -->
 
     <%= form_for([@listing, @order]) do |f| %>
@@ -22,6 +22,12 @@
       <% end %>
 
       <div class="large-8 columns">
+
+        <div id="stripe_error" class="alert-box alert" style="display:none">
+          <noscript>JavaScript is not enabled and is required for this form. First enable it in your web browser settings.
+          </noscript>
+        </div><!-- #stripe_error -->
+
         <div class="field">
           <%= f.label :address %>
           <%= f.text_field :address %>
