@@ -1,11 +1,15 @@
 /* Colors Scheme */
 $fiercered: #e82a2a;
 $deepred: #751717;
+$lightred: #FF6969;
 $beige: #f5f5f1;
 $tintgrey: #efefeb;
 $mediumgrey: #333;
 $coolorange: #d5641c;
+$lightorange: #f08a24;
 $bluetint: #0192b5;
+$lightblue: #9BB9E8;
+$lightgreen: #82BF95;
 
 /* End of Colors */
 
@@ -43,9 +47,21 @@ body {
 	}
 }
 
+.alert-box {
+	background-color: $lightblue;
+}
+
 .alert-box.alert {
-		background-color: $fiercered;
-		border-color: $fiercered;
+	background-color: $lightred;
+	border-color: $fiercered;
+}
+
+.alert-box.success {
+	background-color: $lightgreen;
+}
+
+.alert-box.warning {
+	background-color: $lightorange;
 }
 
 .alert-box.alert h5 {
