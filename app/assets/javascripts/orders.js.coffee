@@ -15,4 +15,4 @@ payment =
 			$('#new_order')[0].submit()
 		else
 			$('#stripe_error').text(response.error.message).show()
-		$('input[type=submit]').attr('disabled', false)
+			$('input[type=submit]').attr('disabled', false)

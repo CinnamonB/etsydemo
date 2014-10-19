@@ -30,21 +30,21 @@
 
         <div class="field">
           <%= f.label :address %>
-          <%= f.text_field :address %>
+          <%= f.text_field :address, placeholder: "Enter your full street address here, include Apt/Suite" %>
         </div>
 
         <div class="row no-padding">
           <div class="large-6 columns">
             <div class="field">
               <%= f.label :city %>
-              <%= f.text_field :city %>
+              <%= f.text_field :city, placeholder: "Enter city here" %>
             </div>
           </div><!-- .columns -->
 
           <div class="large-6 columns">
             <div class="field">
               <%= f.label :state %>
-              <%= f.text_field :state %>
+              <%= f.text_field :state, placeholder: "2 letter state (ie: CA)" %>
             </div>
           </div><!-- .columns -->
         </div><!-- .row -->
@@ -53,14 +53,14 @@
           <div class="large-5 columns">
             <div class="field">
               <%= label_tag :card_number, "Credit Card Number" %>
-              <%= text_field :card_number, nil, {:name => nil, :'data-stripe' => "number"} %>
+              <%= text_field :card_number, nil, {:name => nil, :'data-stripe' => "number", :placeholder => "12-19 digit Card Number"} %>
             </div>
           </div><!-- .columns -->
 
           <div class="large-3 columns">
             <div class="field">
               <%= label_tag :card_code, "CVC" %>
-              <%= text_field :card_code, nil, {:name => nil, :'data-stripe' => "cvc"} %>
+              <%= text_field :card_code, nil, {:name => nil, :'data-stripe' => "cvc", :placeholder => "3-digit CVC"} %>
             </div>
           </div><!-- .columns -->
 

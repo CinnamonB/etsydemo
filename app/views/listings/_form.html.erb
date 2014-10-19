@@ -11,23 +11,72 @@
       </ul>
     </div>
   <% end %>
+  
+  <div id="stripe_error" class="alert-box alert" style="display:none">
+    <noscript>JavaScript is not enabled and is required for this form. First enable it in your web browser settings.
+    </noscript>
+  </div><!-- #stripe_error -->
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
-  </div>
-  <div class="field">
-    <%= f.label :image %><br>
-    <%= f.file_field :image %>
-  </div>
+  <div class="row no-padding">
+    <div class="large-6 columns">
+      <div class="field">
+          <%= f.label :name %>
+          <%= f.text_field :name, placeholder: "Enter your item's name here" %>
+          </div>
+      </div><!-- .columns -->
+
+    <div class="large-2 columns">
+      <div class="field">
+        <%= f.label :price %>
+        <%= f.text_field :price, placeholder: "100.00" %>
+      </div>
+    </div><!-- .columns -->
+
+    <div class="large-4 columns">
+      <div class="field">
+        <%= f.label :image %>
+        <%= f.file_field :image %>
+      </div>
+    </div><!-- .columns -->
+  </div><!-- .row -->
+
+  <div class="row no-padding">
+    <div class="small-12 columns">
+      <div class="field">
+        <%= f.label :description %>
+        <%= f.text_area :description, placeholder: "Enter your item's description here" %>
+      </div>
+    </div><!-- .columns -->
+  </div><!-- .row -->
+
+  <% if current_user.recipient.blank? %>
+    <br>
+    <h1>Back Account Information</h1>
+
+    <div class="row no-padding">
+      <div class="large-2 columns">
+        <div class="field">
+          <%= label_tag :country %>
+          <%= text_field_tag :country, nil, {:name => nil, :'data-stripe' => "country", :placeholder => "US"} %>
+        </div>
+      </div><!-- .columns -->
+
+      <div class="large-5 columns">
+        <div class="field">
+          <%= label_tag :routing_number %>
+          <%= text_field_tag :routing_number, nil, {:name => nil, :'data-stripe' => "routingNumber", :placeholder => "9-digit Routing Number"} %>
+        </div>
+      </div><!-- .columns -->
+
+      <div class="large-5 columns">
+        <div class="field">
+          <%= label_tag :account_number %>
+          <%= text_field_tag :account_number, nil, {:name => nil, :'data-stripe' => "accountNumber", :placeholder => "Up to 17-digit Account Number"} %>
+        </div>
+      </div><!-- .columns -->
+    </div><!-- .row -->
+  <% end %>
+  
   <div class="actions">
     <%= f.submit class: "button tiny" %>
   </div>

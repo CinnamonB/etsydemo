@@ -25,6 +25,6 @@
 <br>
 
 <% if user_signed_in? %>
-  <%= link_to 'New Listing', new_listing_path %>
+  <%= link_to 'New Listing', new_listing_path, data: {no_turbolink: true} %>
 <% end %>
 </div><!-- .columns -->
