@@ -15,7 +15,7 @@ gem "font-awesome-rails"
 gem "figaro"
 gem 'devise'
 gem 'rest-client', require: true
-gem 'stripe', require: 'https://code.stripe.com'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 group :production do
 	gem 'pg'
