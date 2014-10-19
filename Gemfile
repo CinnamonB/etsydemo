@@ -13,7 +13,9 @@ gem "paperclip", "~> 4.2"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "font-awesome-rails"
 gem "figaro"
-gem "devise"
+gem 'devise'
+gem 'rest-client', :source => 'https://rubygems.org/'
+gem 'stripe', :source => 'https://code.stripe.com'
 
 group :production do
 	gem 'pg'
