@@ -166,7 +166,7 @@ DEPENDENCIES
   pg
   rails (= 4.1.6)
   rails_12factor
-  rest-client!
+  rest-client
   sass-rails (~> 4.0.3)
   sdoc
   spring
