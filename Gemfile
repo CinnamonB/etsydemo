@@ -14,8 +14,8 @@ gem "paperclip-dropbox", ">= 1.1.7"
 gem "font-awesome-rails"
 gem "figaro"
 gem 'devise'
-gem 'rest-client', require: true
-gem 'stripe', :source => 'https://code.stripe.com'
+gem 'rest-client', :source => 'https://rubygems.org', require: true
+gem 'stripe', :source => 'https://code.stripe.com', require: true
 
 group :production do
 	gem 'pg'
