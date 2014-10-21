@@ -82,6 +82,7 @@ GEM
     minitest (5.4.2)
     multi_json (1.10.1)
     netrc (0.8.0)
+    newrelic_rpm (3.9.6.257)
     orm_adapter (0.5.0)
     paperclip (4.2.0)
       activemodel (>= 3.0.0)
@@ -165,6 +166,7 @@ DEPENDENCIES
   foundation-rails
   jbuilder (~> 2.0)
   jquery-rails
+  newrelic_rpm
   paperclip (~> 4.2)
   paperclip-dropbox (>= 1.1.7)
   pg

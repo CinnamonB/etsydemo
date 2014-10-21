@@ -16,6 +16,7 @@ gem "figaro"
 gem 'devise'
 gem 'rest-client', require: true
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'newrelic_rpm'
 
 group :production do
 	gem 'pg'
